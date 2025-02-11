@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>K</title>
+    <link rel="icon" href="favicon.ico">
+	<title>Kimlab</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
             <div class="container">
                 <div class="header__menu-bot-nav">
                     <ul>
-                        <li><a href="#">Успешно отправлено!</a></li>
+                        <li><a href="#">Erfolgreich gesendet!</a></li>
                     </ul>
                 </div>
             </div>
@@ -385,6 +386,7 @@
                     <form action="/" method="post"  class="feedback-form">
 						<div class="feedback-form__title main-text">Hinterlassen Sie eine Anfrage für weitere Informationen über Möglichkeiten zur Geschäftsprozessoptimierung Ihres Unternehmens</div>
 						<div class="feedback-form__main">
+                            <input type="text" name="lastname" placeholder="Last Name*">
 							<input type="text" name="name" placeholder="Name*" required>
 							<input type="text" name="company" placeholder="Unternehmen">
 							<input type="tel" name="phone" placeholder="Telefonnummer*" required>
@@ -585,6 +587,7 @@
                         <form action="/" method="post" class="footer__form">
 							<div class="footer__form-title">Teilen Sie uns hier Ihre Fragen mit um die Antwort des Experten zu erhalten</div>
 							<div class="footer__form-main">
+                                <input type="text" name="lastname" placeholder="Last Name*">
 								<input type="text" name="name" placeholder="Name*" required>
 								<input type="text" name="company" placeholder="Unternehmen">
 								<input type="text" name="industry" placeholder="Branche">
@@ -640,6 +643,7 @@
     <div class="popup-form__main">
         <div class="popup-form__title">Jetzt anmelden</div>
         <div class="popup-form__input-wrap">
+            <input type="text" name="lastname" placeholder="Last Name*">
             <input type="text" name="name" placeholder="Name*" required>
             <input type="text" name="company" placeholder="Unternehmen">
             <input type="tel" name="phone" placeholder="Telefonnummer*" required>
@@ -765,6 +769,7 @@
 				<div class="popup-form__main">
 					<div class="popup-form__title">Demotermin vereinbaren</div>
 					<div class="popup-form__input-wrap">
+                        <input type="text" name="lastname" placeholder="Last Name*">
 						<input type="text" name="name" placeholder="Name*" required>
 						<input type="text" name="company" placeholder="Unternehmen">
 						<input type="tel" name="phone" placeholder="Telefonnummer*" required>

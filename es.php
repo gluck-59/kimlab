@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кимлаб</title>
+    <link rel="icon" href="favicon.ico">
+    <title>Kimlab</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -385,6 +386,7 @@
                 <form action="/" method="post"  class="feedback-form">
                     <div class="feedback-form__title main-text">Deje una solicitud para obtener más información sobre las formas de optimización de los procesos  comerciales de su empresa</div>
                     <div class="feedback-form__main">
+                        <input type="text" name="lastname" placeholder="Last Name*">
                         <input type="text" name="name" placeholder="Nombre*" required>
                         <input type="text" name="company" placeholder="Compañía">
                         <input type="tel" name="phone" placeholder="Número de teléfono*" required>
@@ -584,6 +586,7 @@
                     <form action="/" method="post" class="footer__form">
                         <div class="footer__form-title">Haga una pregunta para obtener nuestra opinión experta</div>
                         <div class="footer__form-main">
+                            <input type="text" name="lastname" placeholder="Last Name*">
                             <input type="text" name="name" placeholder="Nombre*" required>
                             <input type="text" name="company" placeholder="Compañía">
                             <input type="text" name="industry" placeholder="industria">
@@ -639,6 +642,7 @@
             <div class="popup-form__main">
                 <div class="popup-form__title">Deje una solicitud</div>
                 <div class="popup-form__input-wrap">
+                    <input type="text" name="lastname" placeholder="Last Name*">
                     <input type="text" name="name" placeholder="Nombre*" required>
                     <input type="text" name="company" placeholder="Compañía">
                     <input type="tel" name="phone" placeholder="Número de teléfono*" required>
@@ -764,6 +768,7 @@
             <div class="popup-form__main">
                 <div class="popup-form__title">Prueba gratuita</div>
                 <div class="popup-form__input-wrap">
+                    <input type="text" name="lastname" placeholder="Last Name*">
                     <input type="text" name="name" placeholder="Nombre*" required>
                     <input type="text" name="company" placeholder="Compañía">
                     <input type="tel" name="phone" placeholder="Número de teléfono*" required>

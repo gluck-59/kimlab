@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <title>Kimlab</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -385,6 +386,7 @@
                 <form action="/" method="post"  class="feedback-form">
                     <div class="feedback-form__title main-text">Leave a request for more information about ways to business process optimization of your company</div>
                     <div class="feedback-form__main">
+                        <input type="text" name="lastname" placeholder="Last Name*">
                         <input type="text" name="name" placeholder="Name*" required>
                         <input type="text" name="company" placeholder="Company">
                         <input type="tel" name="phone" placeholder="Phone number*" required>
@@ -585,6 +587,7 @@
                     <form action="/" method="post" class="footer__form">
                         <div class="footer__form-title">Ask a question to get our expert opinion</div>
                         <div class="footer__form-main">
+                            <input type="text" name="lastname" placeholder="Last Name*">
                             <input type="text" name="name" placeholder="Name*" required>
                             <input type="text" name="company" placeholder="Company">
                             <input type="text" name="industry" placeholder="Industry">
@@ -640,6 +643,7 @@
             <div class="popup-form__main">
                 <div class="popup-form__title">Send a Request</div>
                 <div class="popup-form__input-wrap">
+                    <input type="text" name="lastname" placeholder="Last Name*">
                     <input type="text" name="name" placeholder="Name*" required>
                     <input type="text" name="company" placeholder="Company">
                     <input type="tel" name="phone" placeholder="Phone number*" required>
@@ -765,6 +769,7 @@
             <div class="popup-form__main">
                 <div class="popup-form__title">Free Demo</div>
                 <div class="popup-form__input-wrap">
+                    <input type="text" name="lastname" placeholder="Last Name*">
                     <input type="text" name="name" placeholder="Name*" required>
                     <input type="text" name="company" placeholder="Company">
                     <input type="tel" name="phone" placeholder="Phone number*" required>

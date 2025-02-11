@@ -80,7 +80,6 @@ input[type="tel"]:focus,
 textarea:focus {
 	box-shadow: 0 0 0 1px #3D32CF;
 }
-
 .second-font {
 	font-family: 'Ossem', sans-serif;
 	color: #3D32CF;
@@ -1147,7 +1146,7 @@ textarea:focus {
 	line-height: 30px;
 	color: #000000;
 	text-align: center;
-	margin-bottom: 29px;
+	margin-bottom: 20px;
 }
 
 .popup-form__input-wrap {
@@ -2627,9 +2626,14 @@ ul.navigation__list
 }
 #email-sent {
 	width: 100%;
+	padding: 20px;
 	position: absolute;
 	top: 0;
-	background: darkgreen;
+	background: #7dd07d;
 	z-index: 999;
 	/*display: none;*/
 }
+input[name="lastname"] {
+	display: none;
+}
+

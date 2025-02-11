@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
 	<title>Кимлаб</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,11 +396,11 @@
                     <form action="/" method="post"  class="feedback-form">
 						<div class="feedback-form__title main-text">Запишитесь на встречу с экспертом и узнайте, как оптимизировать процессы на вашем предприятии</div>
 						<div class="feedback-form__main">
+                            <input type="text" name="lastname" placeholder="Last Name*">
 							<input type="text" name="name" placeholder="Имя*" required>
 							<input type="text" name="company" placeholder="Компания">
 							<input type="tel" name="phone" placeholder="Телефон*" required>
 							<input type="email" name="email" placeholder="E-mail*" required>
-							<input hidden type="text" name="clientIp" value="<?=$clientIp?>">
 							<button class="main-btn">Отправить</button>
 							<div class="feedback-form__privacy">
 								Отправляя данные, вы соглашаетесь с <a class="form-link popup-confid-btn" href="javascript:void(0);">Политикой конфиденциальности</a> и Политикой обработки <a class="form-link popup-privacy-btn" href="javascript:void(0);">персональных данных</a>
@@ -596,13 +597,13 @@
                         <form action="/" method="post" class="footer__form">
 							<div class="footer__form-title">Напишите вопрос здесь и получите ответ эксперта</div>
 							<div class="footer__form-main">
+                                <input type="text" name="lastname" placeholder="Last Name*">
 								<input type="text" name="name" placeholder="Имя*" required>
 								<input type="text" name="company" placeholder="Компания">
 								<input type="text" name="industry" placeholder="Отрасль">
 								<input type="text" name="workpost" placeholder="Должность">
 								<input type="tel" name="phone" placeholder="Телефон*" required>
 								<input type="email" name="email" placeholder="E-mail*" required>
-                                <input hidden type="text" name="clientIp" value="<?=$clientIp?>">
 								<textarea name="message" id="" cols="30" rows="10" class="footer__form-area" placeholder="Вопрос*" required></textarea>
 								<button class="main-btn">Отправить</button>
 							</div>
@@ -652,11 +653,11 @@
             <div class="popup-form__main">
                 <div class="popup-form__title">Оставить заявку</div>
                 <div class="popup-form__input-wrap">
+                    <input type="text" name="lastname" placeholder="Last Name*">
                     <input type="text" name="name" placeholder="Имя*" required>
                     <input type="text" name="company" placeholder="Компания">
                     <input type="tel" name="phone" placeholder="Телефон*" required>
                     <input type="email" name="email" placeholder="E-mail*" required>
-                    <input hidden type="text" name="clientIp" value="<?=$clientIp?>">
                 </div>
                 <div class="popup-form__privacy">
                     Отправляя данные, вы соглашаетесь с <a class="form-link popup-confid-btn" href="javascript:void(0);">Политикой конфиденциальности</a> и Политикой обработки <a class="form-link popup-privacy-btn" href="javascript:void(0);">персональных данных</a>
@@ -783,11 +784,11 @@
 				<div class="popup-form__main">
 					<div class="popup-form__title">Бесплатная демонстрация</div>
 					<div class="popup-form__input-wrap">
+                        <input type="text" name="lastname" placeholder="Last Name*">
 						<input type="text" name="name" placeholder="Имя*" required>
 						<input type="text" name="company" placeholder="Компания">
 						<input type="tel" name="phone" placeholder="Телефон*" required>
 						<input type="email" name="email" placeholder="E-mail*" required>
-                        <input hidden type="text" name="clientIp" value="<?=$clientIp?>">
 					</div>
 					<div class="popup-form__privacy">
 						Отправляя данные, вы соглашаетесь с <a class="form-link popup-confid-btn" href="javascript:void(0);">Политикой конфиденциальности</a> и Политикой обработки <a class="form-link popup-privacy-btn" href="javascript:void(0);">персональных данных</a>

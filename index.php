@@ -54,10 +54,16 @@ error_reporting(E_ERROR);
               if (!empty($_POST['company'])) $message .= '<p>Компания: '.$_POST['company'].'</p>';
               if (!empty($_POST['industry'])) $message .= '<p>Отрасль: '.$_POST['industry'].'</p>';
               if (!empty($_POST['message'])) $message .= '<p>Сообщение: '.$_POST['message'].'</p>';
-              $message .= '<hr><pre style="word-wrap: break-word; white-space: pre-wrap; font-size: small;">'.file_get_contents('https://api.hackertarget.com/ipgeo/?q='.$_SERVER['REMOTE_ADDR']).'</pre>';
 
-              mail('gluck59@gmail.com', 'Kimlab — контактная форма', $message, $headers);
-              //$isEmailSent = true; // mm@kimlab.link
+              if ($userIP = getUserIP()) {
+                  $message .= '<hr><pre style="word-wrap: break-word; white-space: pre-wrap; font-size: small;">'.file_get_contents('https://api.hackertarget.com/ipgeo/?q='.$userIP).'</pre>';
+              }
+
+              if (!$_POST['lastname']) {
+                  // mm@kimlab.link
+                  mail('gluck59@gmail.com, mm@kimlab.link', 'Kimlab — контактная форма', $message, $headers);
+                  $isEmailSent = true;
+              }
 
         } catch (Exception $e) {
             throw new Exception('Send Email Error: ',  $e->getMessage(), 400);
@@ -103,3 +109,19 @@ function prettyDump($data = null, $die = false, $showStack = false) {
 }
 
 
+/**
+ * пробует получить реальный IP юзера когда спамер заходит через прокси
+ *
+ * @return mixed
+ */
+function getUserIP() {
+    $userIP = false;
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $userIP = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $userIP = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $userIP = $_SERVER['REMOTE_ADDR'];
+    }
+    return $userIP;
+}
