@@ -60,10 +60,11 @@ error_reporting(E_ERROR);
               if (!empty($_POST['message'])) $message .= '<p>Сообщение: '.$_POST['message'].'</p>';
               $message .= '<hr><pre style="word-wrap: break-word; white-space: pre-wrap; font-size: small;">'.file_get_contents('https://api.hackertarget.com/ipgeo/?q='.$_SERVER['REMOTE_ADDR']).'</pre>';
 
-              if (mail('mm@kimlab.link', 'Kimlab — контактная форма', $message, $headers)) $isEmailSent = true;
+              mail('gluck59@gmail.com', 'Kimlab — контактная форма', $message, $headers);
+              //$isEmailSent = true; // mm@kimlab.link
 
         } catch (Exception $e) {
-            echo 'Send Email Error: ',  $e->getMessage(), "\n";
+            throw new Exception('Send Email Error: ',  $e->getMessage(), 400);
         };
     }
 
